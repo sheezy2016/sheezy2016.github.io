@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sheezy2016 | Official Bio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #050505;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            /* Темный фон с красноватым оттенком под аватарку */
+            background-image: radial-gradient(circle at 50% 50%, #1a0505 0%, #000000 80%);
+        }
+
+        .container {
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            padding: 20px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* Аватарка с красным свечением */
+        .avatar {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 3px solid #ff0000; /* Красная рамка */
+            box-shadow: 0 0 30px rgba(255, 0, 0, 0.6); /* Красное свечение */
+            margin-bottom: 20px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .avatar:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            font-size: 32px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+            font-weight: 800;
+        }
+
+        .tag {
+            color: #ff3333;
+            font-size: 12px;
+            font-weight: bold;
+            margin-top: 8px;
+            display: inline-block;
+            background: rgba(255, 0, 0, 0.1);
+            padding: 4px 12px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 0, 0, 0.3);
+        }
+
+        .bio {
+            color: #cccccc;
+            font-size: 15px;
+            margin: 25px 0;
+            line-height: 1.6;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Стиль кнопок */
+        .btn {
+            background: rgba(20, 20, 20, 0.9);
+            border: 1px solid #333;
+            padding: 16px;
+            border-radius: 12px;
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Кнопка покупки - выделяется */
+        .btn-buy {
+            border-color: #ff0000;
+            background: linear-gradient(45deg, #1a0000, #2a0000);
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+        }
+
+        .btn-buy:hover {
+            background: #ff0000;
+            color: #fff;
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
+            transform: translateY(-3px);
+        }
+
+        /* Кнопка Дискорда */
+        .btn-ds {
+            border-color: #5865F2;
+            background: rgba(88, 101, 242, 0.1);
+        }
+
+        .btn-ds:hover {
+            background: #5865F2;
+            box-shadow: 0 0 20px rgba(88, 101, 242, 0.5);
+            transform: translateY(-3px);
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: #444;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Твоя новая аватарка -->
+        <img src="https://i.imgur.com/8XbJzQl.jpeg" alt="Avatar" class="avatar">
+        
+        <h1>sheezy2016</h1>
+        <span class="tag">NEVERLOSE DEVELOPER</span>
+        
+        <p class="bio">
+            Лучший Anti-Aim и Sync система.<br>
+            Extended Yaw • Fake Flicks • Unresolvable<br>
+            Владелец: faqzen0123
+        </p>
+
+        <div class="links">
+            <!-- Кнопка покупки -->
+            <a href="#" class="btn btn-buy">
+                💎 Купить лучшую Lua
+            </a>
+            
+            <!-- Кнопка Дискорда (ссылка на поиск пользователя) -->
+            <a href="https://discord.com/users/faqzen0123" target="_blank" class="btn btn-ds">
+                📞 Написать в Discord (faqzen0123)
+            </a>
+        </div>
+
+        <div class="footer">
+            © 2026 sheezy2016. All rights reserved.
+        </div>
+    </div>
+
+</body>
+</html>
